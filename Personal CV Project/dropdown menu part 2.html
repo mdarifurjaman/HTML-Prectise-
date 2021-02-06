@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu Part 2</title>
+    <style>
+        .nav-menu {
+            background-color: magenta;
+            padding: 1% 8%;
+            text-align: center;
+            
+        }
+        .nav-menu a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            
+        }
+        .nav-menu a:hover{
+            border-radius: 5px;
+            background: #000;
+        }
+        .dropdown-container {
+             position: relative;
+             display: inline;
+        }
+        .dropdown-content {
+            position: absolute;
+            display: none;
+            top: 30px;
+            right: 0px;
+            background-color: magenta;
+            text-align: left;
+            min-width: 100px;
+        }
+        .dropdown-content a {
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: orange;
+        }
+        .dropdown-container:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">Bangladesh</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Next</a>
+        <div class="dropdown-container">
+            <a href="#">Prvious</a>
+            <div class="dropdown-content">
+                <a href="#">Pictuter</a>
+                <a href="#">Phone No</a>
+                <a href="#">E-mail</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

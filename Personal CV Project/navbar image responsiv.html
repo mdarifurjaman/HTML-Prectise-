@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Image Responsive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .menu {
+            background-color: cyan;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .menu a {
+            text-decoration: none;
+            padding: 20px;
+            color: coral;
+            font-weight: bold;
+        }
+        .menu a:hover {
+            background-color: darkgrey;
+            color: white;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .img1 {
+              margin-top: 10px;
+              border: 1px solid #ccc;
+        }
+        .img1:hover {
+            border: 2px springgreen solid;
+        }
+        
+        .img1 img {
+              width: 100%;
+              height: auto;
+        }
+        .text {
+               padding: 15px;
+               text-align: center;
+               font-weight: bold;
+        }
+        #responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        @media screen and (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .menu a {
+                background-color: darkorchid;
+                color: white;
+                margin: 10px 0;
+                border-radius: 10px;
+                text-align: center;
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            #responsive {
+                flex-direction: column;
+                width: 70%;
+                margin: 6px 0;
+
+            }
+        }
+            
+    </style>
+</head>
+<body>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Next</a>
+        </div>
+        <div id="responsive">
+            <div class="img1">
+                <a href="images/img_5terre.jpg" target="_blank">
+                    <img src="images/img_5terre.jpg" alt="5terre" width="600px" height="400">
+                </a>
+                <div class="text">Add a descriptions of the image here.</div>
+            </div>
+           
+        </div>
+        <div id="responsive">
+            <div class="img1">
+                <a href="images/img_forest.jpg" target="_blank">
+                <img src="images/img_forest.jpg" alt="forest" width="600px" height="400px">
+                </a>
+                <div class="text">Add a descriptions of the image here.</div>
+            </div>
+        </div>
+        <div id="responsive">
+            <div class="img1">
+                <a href="images/img_lights.jpg" target="_blank">
+                <img src="images/img_lights.jpg" alt="forest" width="600px" height="400px">
+                </a>
+                <div class="text">Add a descriptions of the image here.</div>
+            </div>
+        </div>
+        <div id="responsive">
+            <div class="img1">
+                <a href="images/img_mountains.jpg" target="_blank">
+                <img src="images/img_mountains.jpg" alt="forest" width="600px" height="400px">
+                </a>
+                <div class="text">Add a descriptions of the image here.</div>
+            </div>
+        </div>
+
+    
+</body>
+</html>

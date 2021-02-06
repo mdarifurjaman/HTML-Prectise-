@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations position And Delay</title>
+    <style>
+            /*div{
+                background-color: red;
+                width: 230px;
+                height: 230px;
+                position: relative;
+                animation-name: example;
+                animation-duration: 7s;
+                animation-delay: 2s;
+            }*/
+            div{
+                margin: 0 auto;
+                background-color: red;
+                width: 130px;
+                height: 130px;
+                position: relative;
+                animation-name: example;
+                animation-delay: 3s;
+                animation-duration: 7s;
+                animation-iteration-count: 3;
+                animation-direction: reverse;
+                }
+               
+            @keyframes example {
+                0%{background-color: darkblue; left: 0px; top: 0px;}
+                25%{background-color: darkorange; left: 200px; top: 0px;}
+                50%{background-color: deeppink; left: 200px; top: 200px;}
+                75%{background-color: green; left: 0px; top: 200px;}
+                100%{background-color: gold; left: 0px; top: 0px;}
+            }
+    </style>
+</head>
+<body>
+    <h1>Here we can see animations position and delay</h1>
+    <div></div>
+</body>
+</html>

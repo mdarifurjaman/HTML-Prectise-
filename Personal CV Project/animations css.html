@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations CSS</title>
+    <style>
+           .div1 {
+               margin: 0 auto;
+               background-color: blue;
+               width: 250px;
+               height: 230px;
+               animation-name: example;
+               animation-duration: 10s;
+           }
+           .div2{
+               margin: 0 auto;
+               background-color: crimson;
+               width: 250px;
+               height: 230px;
+               animation-name: example;
+               animation-duration: 7s;
+           }
+         /*  @keyframes example {
+               from{background-color: chartreuse;}
+               to{background-color: coral;}
+           } */
+          @keyframes example  {
+               0% {background-color: cyan;}
+               25%{background-color: darkmagenta;}
+               50%{background-color: darkorange;}
+               100%{background-color: darkslategrey;}
+           }
+    </style>
+</head>
+<body>
+    <h1>here we can see the animations css</h1>
+    <div>
+        <div class="div1"></div><br/>       
+        <div class="div2"></div>
+    </div>
+    
+</body>
+</html>

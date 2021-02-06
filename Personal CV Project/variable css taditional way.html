@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Function CSS</title>
+    <style>
+         /*body {
+             background-color: cyan;
+         }
+         h1 {
+             text-align: center;
+         }
+         .container {
+             background-color: white;
+             text-align: justify;
+             color: violet;
+             padding: 20px;
+         }
+         h2 {
+             border-bottom: turquoise 2px solid;
+         }
+         button {
+             background-color: white;
+             color: violet;
+             padding: 5px;
+             border: 1px violet solid;
+         }*/
+         :root {
+             --cyan:cyan;
+             --violet: violet;
+             --white: white;
+             --turquoise: turquoise;
+
+         }
+         body {
+             background-color: var(--cyan);
+         }
+         h1 {
+             text-align: center;
+         }
+         .container {
+             background-color: var(--white);
+             text-align: justify;
+             color: var(--violet);
+             padding: 20px;
+         }
+         h2 {
+             border-bottom: 2px var(--turquoise) solid;
+         }
+         button {
+             background-color: var(--white);
+             color: var(--violet);
+             padding: 5px;
+             border: 1px var(--violet) solid;
+         }
+
+    </style>
+</head>
+<body>
+     <h1>The Taditional Way</h1>
+     <div class="container">
+         <h2>Lorem Ipsum</h2>
+         <p>Duo sit gubergren amet accusam diam elitr accusam no clita aliquyam. Diam gubergren justo duo justo 
+            invidunt magna no et rebum, amet accusam diam gubergren dolor et nonumy voluptua, duo.
+        </p>
+        <p>Et vero no elitr at invidunt diam lorem. Aliquyam sit diam eos clita no elitr et est, nonumy aliquyam 
+           invidunt ut et. Amet labore eirmod eos justo duo aliquyam nonumy eos et.
+        </p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+     </div>
+</body>
+</html>

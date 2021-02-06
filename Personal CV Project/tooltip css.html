@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+            }
+            .tooltip .text-tooltip {
+                visibility: hidden;
+                width: 120px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                position: absolute;
+                z-index: 1;
+            }
+            .tooltip:hover .text-tooltip {
+                visibility: visible;
+
+            }
+    </style>
+</head>
+<body style="text-align: center;">
+    <p>When you mouse hover then show the text tooltip</p>
+
+    <div class="tooltip">Hover Over Me! <br/>
+        <span class="text-tooltip">Tooltip Text</span>
+    </div>
+    <p>Sit justo aliquyam diam at aliquyam est erat gubergren kasd eirmod, sit et sit et sit sit sit, accusam et.
+       Amet sit dolores et sed duo et dolore gubergren justo consetetur. Diam dolores elitr diam diam lorem justo voluptua lorem et, at dolor invidunt amet. 
+    </p>
+
+</body>
+</html>

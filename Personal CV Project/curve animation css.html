@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curve animations css.html</title>
+    <style>
+        div{
+            background-color: green;
+            width: 100px;
+            height: 50px;
+            position: relative;
+            animation: mymove 5s infinite;
+        }
+        #div1{animation-timing-function: linear;}
+        #div2{animation-timing-function: ease;}
+        #div3{animation-timing-function: ease-in;}
+        #div4{animation-timing-function: ease-out;}
+        #div5{animation-timing-function: ease-in-out ;}
+        @keyframes mymove {
+            from {left: 0px;}
+            to {left: 600px;}
+
+        }
+        p{
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1"><p>linear</p></div>
+    <div id="div2"><p>ease</p></div>
+    <div id="div3"><p>ease-in</p></div>
+    <div id="div4"><p>ease-out</p></div>
+    <div id="div5"><p>ease-in-out</p></div>
+    
+</body>
+</html>

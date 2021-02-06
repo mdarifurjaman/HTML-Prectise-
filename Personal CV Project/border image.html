@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Images</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            background-color: gray;
+            color: darkblue;
+            width: 300px;
+            border: 5px coral solid ;
+            margin: 0 auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #borderimg1 {
+            border: 10px solid transparent;
+            border-image: url(images/border.png) 25% round;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        #borderimg2 {
+            border: 10px solid transparent;
+            border-image: url(images/border.png) 30 round;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+        #borderimg3 {
+            border: 10px solid transparent;
+            border-image: url(images/border.png) 40 round;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Here  Border Images</h1>
+    <p id="borderimg1">border-image: url( border.img) 25% round;</p>
+    <p id="borderimg2">border-image: url( border.img) 30 round;</p>
+    <p id="borderimg3">border-image: url( border.img) 20% round;</p>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Befor And After</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body {
+            color: white;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        header::before{
+            background: url(https://source.unsplash.com/collection/190727/1600x900) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .nav-menu ul{
+             display: flex;
+        }
+        .nav-menu ul li {
+            list-style: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin: 6px 10px;
+        }
+        .content-section {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            height: 358px;
+            justify-content: center;
+            flex-direction: column;
+            margin: 70px 119px;
+        }
+        h1 {
+            text-align: center;
+            font-family: cursive;
+        }
+        p{
+            margin: 41px 10px;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-section">
+            <div class="nav-menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Contact</li>
+                    <li>News</li>
+                    <li>Others</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content-section">
+        <h1>Messi Is The Best Player In The World</h1>
+        <p>As well as financial donations towards everyday running costs, 
+            the Leo Messi Foundation has awarded research
+            and helped to pay for training. In February 2019, Messi's foundation 
+            donated €200,000 (£175,000/$218,000) to Unicef projects in Kenya that allowed 
+            over 2,000 citizens access to free food and water.
+        </p>
+    </div>
+</body>
+</html>

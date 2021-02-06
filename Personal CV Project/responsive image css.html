@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .img1 {
+              border: 1px solid #ccc;
+        }
+        .img1:hover {
+            border: 2px springgreen solid;
+        }
+        
+        .img1 img {
+              width: 100%;
+              height: auto;
+        }
+        .text {
+               padding: 15px;
+               text-align: center;
+               font-weight: bold;
+        }
+        #responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        @media only screen and (max-width: 700px) {
+  #responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <h1>Here Responsive Image Design</h1>
+    <h3>Responsive Image Gallery</h3>
+    <div id="responsive">
+        <div class="img1">
+            <a href="images/img_forest.jpg" target="_blank">
+            <img src="images/img_forest.jpg" alt="paris" width="600" height="400">
+            </a>
+            <div class="text">Add a descriptions of the image here.</div>
+        </div>
+    </div> 
+    <div id="responsive">
+        <div class="img1">
+            <a href="images/img_5terre.jpg" target="_blank">
+            <img src="images/img_5terre.jpg" alt="river" width="600" height="400">
+            </a>
+            <div class="text">Add a descriptions of the image here.</div>
+        </div>
+    </div>
+    <div id="responsive">
+        <div class="img1">
+            <a href="images/img_lights.jpg" target="_blank">
+            <img src="images/img_lights.jpg" alt="paris" width="600" height="400">
+            </a>
+            <div class="text">Add a descriptions of the image here.</div>
+        </div>
+    </div>
+    <div id="responsive">
+        <div class="img1">
+            <a href="images/paper-creased-background.jpg" target="_blank">
+            <img src="images/paper-creased-background.jpg" alt="paris" width="600" height="400">
+            </a>
+            <div class="text">Add a descriptions of the image here.</div>
+        </div>
+    </div>
+</body>
+</html>

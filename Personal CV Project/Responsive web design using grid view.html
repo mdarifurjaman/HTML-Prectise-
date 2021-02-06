@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design using grid view</title>
+    <style>
+           * {
+               box-sizing: border-box;
+           }
+           .header {
+                background-color: cyan;
+                color: white;
+                text-align: center;
+                padding: 1% 5%;
+           }
+           h1{
+               text-shadow: 2px 2px black;
+           }
+           .nav-menu {
+               background-color: violet;
+               padding: 1% 5%;
+           }
+           .nav-menu a {
+               text-decoration: none;
+               color: white;
+               padding: 10px;
+               display: block;
+               font-size: 1.2rem;
+           }
+           .main {
+               background-color: chartreuse;
+               padding: 1% 5%;
+               text-align: justify;
+           }
+           .aside {
+               background-color: blueviolet;
+               text-align: center;
+               padding: 1% 5%;
+           }
+           .foorter {
+               background-color: black;
+               color: white;
+               padding: 15px;
+               text-align: center;
+           }
+           .foorter a {
+               text-decoration: none;
+               margin: 20px;
+               color: white;
+               font-size: 0.8rem;
+           }
+           [class*="col-"] {
+                    float: left;
+                    padding: 10px;
+                    text-align: center;
+                }
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+           /*Mobile Display-Must Be First Create A Mobile Display*/
+           [class*="col-"] {
+                    width: 100%;
+                }
+           /* For desktop: 
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;} */
+
+                @media only screen and (min-width: 600px) {
+                 /* For tablets: */
+                .col-s-1 {width: 8.33%;}
+                .col-s-2 {width: 16.66%;}
+                .col-s-3 {width: 25%;}
+                .col-s-4 {width: 33.33%;}
+                .col-s-5 {width: 41.66%;}
+                .col-s-6 {width: 50%;}
+                .col-s-7 {width: 58.33%;}
+                .col-s-8 {width: 66.66%;}
+                .col-s-9 {width: 75%;}
+                .col-s-10 {width: 83.33%;}
+                .col-s-11 {width: 91.66%;}
+                .col-s-12 {width: 100%;}
+
+                .nav-menu a {
+                    background-color: crimson;
+                    margin: 10px;
+                    text-align: center;
+                    border-radius: 5px;
+                    width: 100%;
+                }
+                .nav-menu a:hover {
+                    background-color: darkgray;
+
+                }
+                .main {
+               background-color: blueviolet;
+               color: white;
+               width: 50%;
+           }
+           .aside {
+               background-color: pink;
+               text-align: center;
+               padding: 1% 5%;
+               width: 100%;
+           }
+            }
+                @media screen and (min-width: 768px) {
+                    /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;} 
+                
+                .nav-menu a {
+                    background-color: darkgoldenrod;
+                    margin: 10px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+                .nav-menu a:hover {
+                    background-color: darkgray;
+                }
+            }
+            
+           /* This Is Mobile Display:  @media screen and (max-width: 700px) {
+                [class*="col-"] {
+                    width: 100%;
+                }
+                .nav-menu a {
+                    background-color: darkgoldenrod;
+                    margin: 10px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+                .nav-menu a:hover {
+                    background-color: darkgray;
+                }
+                
+                
+            }*/
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Arifur Jaman</h1>
+    </div>
+    <div class="row">
+         <div class="nav-menu col-s-3 col-2">
+             <a href="#">Home</a>
+             <a href="#">Tutorial</a>
+             <a href="#">Contact</a>
+             <a href="#">About</a>
+         </div>
+         <div class="main col-s-8 col-7">
+             <h1>I Am A Web Designer</h1>
+             <p>Sed lorem diam labore labore sanctus et lorem lorem diam. Ipsum duo dolore et dolor ipsum no dolore, 
+                ea invidunt kasd ut magna. Est labore erat ipsum amet et. Duo.
+            </p>
+            <p>
+                Eirmod lorem lorem sanctus diam diam eos, elitr dolore sea et vero dolor ipsum et et, diam ea diam 
+                tempor amet elitr. Et sadipscing nonumy no justo et tempor ut. Lorem aliquyam gubergren takimata 
+                consetetur voluptua et sea amet. Rebum diam kasd ut no stet. Et lorem ea lorem sit.
+                Kasd ea labore erat erat clita stet sadipscing justo. Est justo aliquyam sit sanctus clita vero duo 
+                ea duo. Tempor ipsum lorem duo sadipscing magna et. Kasd dolore magna amet clita dolor dolores sit ut, 
+                ipsum amet duo nonumy dolor lorem at. Est dolore takimata ipsum diam tempor amet. Lorem elitr eos tempor 
+                amet accusam sed dolor sit amet, et sed labore tempor et sit. Dolores voluptua invidunt lorem et voluptua, 
+                dolor accusam eos no accusam, dolores accusam et takimata.
+            </p>
+         </div>
+            <div class="aside col-s-12 col-3">
+                <h2>What I Love??</h2>
+                <p>
+                    Nonumy ut et eos sit sea accusam labore diam dolore aliquyam, et amet takimata stet dolor labore sanctus amet tempor.
+                </p>
+                <h2>What I Do??</h2>
+                <p>
+                    Et ipsum dolor sed et eirmod magna sanctus lorem. Ea.
+                </p>
+                <h2>What I Don't Love??</h2>
+                <p>
+                   Tempor et dolor dolore consetetur tempor ea, sanctus nonumy stet ipsum est labore ut ipsum. 
+                </p>
+                <h2>What I Don't Do??</h2>
+                <p>
+                    Invidunt dolor dolore est elitr consetetur nonumy takimata lorem elitr, gubergren invidunt eirmod dolore sed amet lorem elitr voluptua invidunt. Invidunt.
+                </p>
+            </div>
+         </div>
+         <div class="foorter">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.cricbuzz.com/">cricbuzz</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <p>Copyright &copy; Arifur 2020</p>
+         </div>
+</body>
+</html>

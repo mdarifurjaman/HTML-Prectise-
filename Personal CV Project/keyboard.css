@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    color: pink;
+}
+
+  
+.butn{
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border:2px solid pink;
+    background-color: pink;
+    font-size: 0;
+}

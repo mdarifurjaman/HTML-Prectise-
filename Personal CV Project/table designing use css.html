@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Design With CSS</title>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%; 
+        }
+
+        th,td{
+            border: 2px solid black;
+            padding: 5px;
+            text-align: center;
+           
+        }
+        th{
+            background-color: yellowgreen;
+            height: 40px;
+            color: tomato;
+            vertical-align: middle;
+
+        }
+        th:hover{
+            background-color: cornflowerblue;
+        }
+        tr:nth-child(even){
+            background-color:palevioletred;
+            color: white;
+        }
+        tr:nth-child(odd){
+            background-color: purple;
+            color:white;
+        }
+        tr:hover{
+            background-color :tomato ;
+        }
+
+
+    </style>
+</head>
+<body>
+   
+    <table>
+        <caption>Student Details</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>GPA</th>
+            <th>Bio</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>153-15-607</td>
+            <td>Arifur Jaman</td>
+            <td>3.5</td>
+            <td>Sit tempor et lorem kasd sed lorem dolor justo. Erat ea consetetur dolor gubergren dolor no amet invidunt labore. Labore ea lorem amet et. Kasd tempor ipsum tempor dolor sit invidunt, lorem amet clita aliquyam justo sit duo. Sit nonumy elitr nonumy sadipscing rebum amet elitr kasd. Est clita amet.</td>
+            <td>01629230134</td>
+        </tr>
+        <tr>
+            <td>153-15-1011</td>
+            <td>Salim Hossain</td>
+            <td>3.75</td>
+            <td>Sit tempor et lorem kasd sed lorem dolor justo. Erat ea consetetur dolor gubergren dolor no amet invidunt labore. Labore ea lorem amet et. Kasd tempor ipsum tempor dolor sit invidunt, lorem amet clita aliquyam justo sit duo. Sit nonumy elitr nonumy sadipscing rebum amet elitr kasd. Est clita amet.</td>
+            <td>01629230134</td>
+        </tr>
+        <tr>
+            <td>153-15-1607</td>
+            <td>Rifat Jaman</td>
+            <td>3.5</td>
+            <td>Sit tempor et lorem kasd sed lorem dolor justo. Erat ea consetetur dolor gubergren dolor no amet invidunt labore. Labore ea lorem amet et. Kasd tempor ipsum tempor dolor sit invidunt, lorem amet clita aliquyam justo sit duo. Sit nonumy elitr nonumy sadipscing rebum amet elitr kasd. Est clita amet.</td>
+            <td>01629230134</td>
+        </tr>
+        <tr>
+            <td>153-15-6087</td>
+            <td>Faruk Hossain</td>
+            <td>3.5</td>
+            <td>Sit tempor et lorem kasd sed lorem dolor justo. Erat ea consetetur dolor gubergren dolor no amet invidunt labore. Labore ea lorem amet et. Kasd tempor ipsum tempor dolor sit invidunt, lorem amet clita aliquyam justo sit duo. Sit nonumy elitr nonumy sadipscing rebum amet elitr kasd. Est clita amet.</td>
+            <td>01629230134</td>
+        </tr>
+        <tr>
+            <td>153-15-6407</td>
+            <td>Arifur Jaman Bappy</td>
+            <td>3.5</td>
+            <td>Sit tempor et lorem kasd sed lorem dolor justo. Erat ea consetetur dolor gubergren dolor no amet invidunt labore. Labore ea lorem amet et. Kasd tempor ipsum tempor dolor sit invidunt, lorem amet clita aliquyam justo sit duo. Sit nonumy elitr nonumy sadipscing rebum amet elitr kasd. Est clita amet.</td>
+            <td>01629230134</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
